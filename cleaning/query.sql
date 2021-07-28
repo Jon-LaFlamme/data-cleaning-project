@@ -82,6 +82,19 @@ ORDER BY AVG(JobsReported) DESC;
 -- write output csv file
 .headers on
 .mode csv
-.output test.csv
+.output Q7.csv
 select * from tbl1;
 .output stdout
+
+cat db.sql | sqlite3 database.db;
+
+
+select
+  p.*,
+  (
+    select city
+    from zipcode as z
+    where z.zipcode = p.zip
+    limit 1
+  ) as CleanedCity
+from ppp_naics as p;
