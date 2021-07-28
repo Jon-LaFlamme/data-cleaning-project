@@ -3,14 +3,16 @@ SELECT
   Lender,
   AVG(LoanAmount)
 FROM PPP_Table
-GROUP BY Lender;
+GROUP BY Lender
+ORDER BY AVG(LoanAmount) DESC;
 
 -- Query 1
 SELECT
   City,
   AVG(LoanAmount)
 FROM PPP_Table
-GROUP BY City;
+GROUP BY City
+ORDER BY AVG(LoanAmount) DESC;
 
 -- Query 2
 CREATE VIEW City_Classification_PPP
@@ -31,18 +33,20 @@ FROM
 -- Query 3
 SELECT
   City,
-  JobType,
+  JobTitle,
   COUNT(LoanAmount)
-FROM City_Classification_PPP
-GROUP BY City, JobType;
+FROM PPP_Table
+GROUP BY City, JobTitle
+ORDER BY COUNT(LoanAmount) DESC;
 
 -- Query 4
 SELECT
   City,
-  JobType,
+  JobTitle,
   AVG(LoanAmount)
-FROM City_Classification_PPP
-GROUP BY City, JobType;
+FROM PPP_Table
+GROUP BY City, JobTitle
+ORDER BY AVG(LoanAmount) DESC;
 
 -- Query 5
 CREATE VIEW Jobs
@@ -60,15 +64,24 @@ FROM
 -- Query 6
 SELECT
   Lender,
-  Month,
-  AVG(PerJobAmount)
-FROM Jobs
-GROUP BY Lender, Month;
+  MonthApproved,
+  AVG(LoanAmount / JobsReported) as AvgPerJobAmount
+FROM PPP_Table
+GROUP BY Lender, MonthApproved
+ORDER BY AvgPerJobAmount DESC;
 
 -- Query 7
 SELECT
   Lender,
-  Month,
+  MonthApproved,
   AVG(JobsReported)
-FROM Jobs
-GROUP BY Lender, Month;
+FROM PPP_Table
+GROUP BY Lender, MonthApproved
+ORDER BY AVG(JobsReported) DESC;
+
+-- write output csv file
+.headers on
+.mode csv
+.output test.csv
+select * from tbl1;
+.output stdout

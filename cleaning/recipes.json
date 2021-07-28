@@ -223,5 +223,38 @@
     "newColumnName": "MonthApproved",
     "columnInsertIndex": 8,
     "description": "Create column MonthApproved at index 8 based on column DateApproved using expression grel:if(value.datePart(\"months\")==1,'JANUARY',\nif(value.datePart(\"months\")==2,'FEBRUARY',\nif(value.datePart(\"months\")==3,'MARCH',\nif(value.datePart(\"months\")==4,'APRIL',\nif(value.datePart(\"months\")==5,'MAY',\nif(value.datePart(\"months\")==6,'JUNE',\nif(value.datePart(\"months\")==7,'JULY',\nif(value.datePart(\"months\")==8,'AUGUST',\nif(value.datePart(\"months\")==9,'SEPTEMBER',\nif(value.datePart(\"months\")==10,'OCTOBER',\nif(value.datePart(\"months\")==11,'NOVEMBER',\n'DECEMBER')))))))))))"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Zip",
+    "description": "Remove column Zip"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NAICSCode",
+    "description": "Remove column NAICSCode"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "2017 NAICS Code",
+    "newColumnName": "NAICSCode",
+    "description": "Rename column 2017 NAICS Code to NAICSCode"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "2017 NAICS Title",
+    "newColumnName": "JobTitle",
+    "description": "Rename column 2017 NAICS Title to JobTitle"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "City_x",
+    "description": "Remove column City_x"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "City_y",
+    "newColumnName": "City",
+    "description": "Rename column City_y to City"
   }
 ]
