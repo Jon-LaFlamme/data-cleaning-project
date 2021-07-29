@@ -2,7 +2,7 @@
 https://www.census.gov/naics/2017NAICS/6-digit_2017_Codes.xlsx
 
 2) City-State-Zip Original:
-http://www.usboundary.com/Resources/USPS%20Zip%20Codes%20Download
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/usps_zipcodes.txt
 
 3) PPP Original: 
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/PPP-Original.txt
