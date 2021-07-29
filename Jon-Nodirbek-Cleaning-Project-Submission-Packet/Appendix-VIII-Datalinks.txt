@@ -10,7 +10,6 @@ https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/PPP-Origina
 4) City-State-Zip Trimmed:
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/trimmed-zipcode.txt
 
-PPP-Prime:
+5) PPP-Prime:
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/ppp-naics-joined.txt
 
-5) PPP-Prime:
