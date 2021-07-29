@@ -1,0 +1,16 @@
+if(value==0,1,
+if(value==null,1,
+value))
+
+if(value.datePart("months")==1,'JANUARY',
+if(value.datePart("months")==2,'FEBRUARY',
+if(value.datePart("months")==3,'MARCH',
+if(value.datePart("months")==4,'APRIL',
+if(value.datePart("months")==5,'MAY',
+if(value.datePart("months")==6,'JUNE',
+if(value.datePart("months")==7,'JULY',
+if(value.datePart("months")==8,'AUGUST',
+if(value.datePart("months")==9,'SEPTEMBER',
+if(value.datePart("months")==10,'OCTOBER',
+if(value.datePart("months")==11,'NOVEMBER',
+'DECEMBER')))))))))))
