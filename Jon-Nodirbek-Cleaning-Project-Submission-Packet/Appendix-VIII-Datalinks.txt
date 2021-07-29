@@ -1,0 +1,16 @@
+1) NAICS Original:
+https://www.census.gov/naics/2017NAICS/6-digit_2017_Codes.xlsx
+
+2) City-State-Zip Original:
+http://www.usboundary.com/Resources/USPS%20Zip%20Codes%20Download
+
+3) PPP Original: 
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/PPP%20Data%20up%20to%20150k%20080820%20HI.txt
+
+4) City-State-Zip Trimmed:
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/trimmed-zipcode.txt
+
+PPP-Prime:
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/ppp-naics-joined.txt
+
+5) PPP-Prime:
