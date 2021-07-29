@@ -1,0 +1,289 @@
+[
+  {
+    "op": "core/column-removal",
+    "columnName": "Column",
+    "description": "Remove column Column"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "State",
+    "description": "Remove column State"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NAICSCode",
+    "description": "Remove column NAICSCode"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "BusinessType",
+    "description": "Remove column BusinessType"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "RaceEthnicity",
+    "description": "Remove column RaceEthnicity"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Gender",
+    "description": "Remove column Gender"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "Veteran",
+    "description": "Remove column Veteran"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "NonProfit",
+    "description": "Remove column NonProfit"
+  },
+  {
+    "op": "core/column-removal",
+    "columnName": "CD",
+    "description": "Remove column CD"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CleanedCity",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CleanedCity using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CleanedCity",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CleanedCity using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "CleanedCity",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column CleanedCity using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JobTitle",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JobTitle using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JobTitle",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JobTitle using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JobTitle",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JobTitle using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Lender",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Lender using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Lender",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Lender using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Lender",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column Lender using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column City using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column City using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "City",
+    "expression": "value.toUppercase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column City using expression value.toUppercase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JobsReported",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JobsReported using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "LoanAmount",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column LoanAmount using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "JobsReported",
+    "expression": "grel:if(value==0,1,\nif(value==null,1,\nvalue))",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column JobsReported using expression grel:if(value==0,1,\nif(value==null,1,\nvalue))"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "DateApproved",
+    "expression": "value.toDate()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column DateApproved using expression value.toDate()"
+  },
+  {
+    "op": "core/column-addition",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "baseColumnName": "DateApproved",
+    "expression": "grel:if(value.datePart(\"months\")==1,'JANUARY',\nif(value.datePart(\"months\")==2,'FEBRUARY',\nif(value.datePart(\"months\")==3,'MARCH',\nif(value.datePart(\"months\")==4,'APRIL',\nif(value.datePart(\"months\")==5,'MAY',\nif(value.datePart(\"months\")==6,'JUNE',\nif(value.datePart(\"months\")==7,'JULY',\nif(value.datePart(\"months\")==8,'AUGUST',\nif(value.datePart(\"months\")==9,'SEPTEMBER',\nif(value.datePart(\"months\")==10,'OCTOBER',\nif(value.datePart(\"months\")==11,'NOVEMBER',\n'DECEMBER')))))))))))",
+    "onError": "set-to-blank",
+    "newColumnName": "MonthApproved",
+    "columnInsertIndex": 5,
+    "description": "Create column MonthApproved at index 5 based on column DateApproved using expression grel:if(value.datePart(\"months\")==1,'JANUARY',\nif(value.datePart(\"months\")==2,'FEBRUARY',\nif(value.datePart(\"months\")==3,'MARCH',\nif(value.datePart(\"months\")==4,'APRIL',\nif(value.datePart(\"months\")==5,'MAY',\nif(value.datePart(\"months\")==6,'JUNE',\nif(value.datePart(\"months\")==7,'JULY',\nif(value.datePart(\"months\")==8,'AUGUST',\nif(value.datePart(\"months\")==9,'SEPTEMBER',\nif(value.datePart(\"months\")==10,'OCTOBER',\nif(value.datePart(\"months\")==11,'NOVEMBER',\n'DECEMBER')))))))))))"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "Lender",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "FIRSTBANK",
+          "FIRST BANK"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "FIRST BANK"
+      }
+    ],
+    "description": "Mass edit cells in column Lender"
+  }
+]

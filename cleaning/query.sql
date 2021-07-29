@@ -79,16 +79,7 @@ FROM PPP_Table
 GROUP BY Lender, MonthApproved
 ORDER BY AVG(JobsReported) DESC;
 
--- write output csv file
-.headers on
-.mode csv
-.output Q7.csv
-select * from tbl1;
-.output stdout
-
-cat db.sql | sqlite3 database.db;
-
-
+-- ppp_naics_zipcode join
 select
   p.*,
   (

@@ -1,0 +1,4 @@
+or2yw -i recipe_zipcode.json -o zipcode_parellel.pdf -ot pdf -t parallel
+or2yw -i recipe_zipcode.json -o zipcode_linear.pdf -ot pdf
+or2yw -i recipe_ppp.json -o ppp_parallel.pdf -ot pdf -t parallel
+or2yw -i recipe_ppp.json -o ppp_linear.pdf -ot pdf
