@@ -4,7 +4,7 @@ https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/NAICS-Origi
 2) City-State-Zip Original:
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/usps_zipcodes.txt
 
-3) PPP Original: 
+3) PPP Original:
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/PPP-Original.txt
 
 4) City-State-Zip Trimmed:
@@ -13,3 +13,8 @@ https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/trimmed-zip
 5) PPP-Prime:
 https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/ppp-naics-joined.txt
 
+6) PPP final cleaned dataset:
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/ppp-final-cleaned.txt
+
+7) Query results:
+https://github.com/Jon-LaFlamme/data-cleaning-project/blob/main/data/results

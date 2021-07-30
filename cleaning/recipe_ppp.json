@@ -1,6 +1,7 @@
 [
   {
     "op": "core/column-removal",
+    "tableName": "PPP-NAICS_CZS",
     "columnName": "Column",
     "description": "Remove column Column"
   },

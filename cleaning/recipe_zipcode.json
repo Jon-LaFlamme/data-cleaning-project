@@ -5,6 +5,7 @@
       "facets": [],
       "mode": "row-based"
     },
+    "tableName": "City-State-Zipcode",
     "columnName": "City",
     "expression": "value.toUppercase()",
     "onError": "keep-original",

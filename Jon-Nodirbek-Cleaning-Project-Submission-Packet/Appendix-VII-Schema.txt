@@ -38,6 +38,7 @@ sqlite> .schema ppp_table
     JobTitle VARCHAR(255) NULL,
     CleanedCity VARCHAR(255) NULL
   );
+
 sqlite> .schema zipcode
   CREATE TABLE zipcode (
     ZipCode VARCHAR(255) NULL,
