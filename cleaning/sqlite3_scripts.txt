@@ -1,8 +1,0 @@
--- write output csv file
-.headers on
-.mode csv
-.output Q7.csv
-select * from tbl1;
-.output stdout
-
-cat db.sql | sqlite3 database.db;

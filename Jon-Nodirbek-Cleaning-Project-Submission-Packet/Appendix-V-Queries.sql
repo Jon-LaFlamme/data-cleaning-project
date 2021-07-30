@@ -15,22 +15,6 @@ GROUP BY City
 ORDER BY AVG(LoanAmount) DESC;
 
 -- Query 2
-CREATE VIEW City_Classification_PPP
-FROM
-(
-  SELECT
-    C.City AS City,
-    N.JobType AS JobType,
-    P.LoanAmount As LoanAmount
-  FROM PPE_table P
-  INNER JOIN City_Table C
-  ON C.City = P.City AND
-     C.Zip = P.Zip
-  LEFT JOIN NAICS_Table N
-  ON N.NAICSCode = P.NAICS
-);
-
--- Query 3
 SELECT
   City,
   JobTitle,
@@ -39,7 +23,7 @@ FROM PPP_Table
 GROUP BY City, JobTitle
 ORDER BY COUNT(LoanAmount) DESC;
 
--- Query 4
+-- Query 3
 SELECT
   City,
   JobTitle,
@@ -48,20 +32,7 @@ FROM PPP_Table
 GROUP BY City, JobTitle
 ORDER BY AVG(LoanAmount) DESC;
 
--- Query 5
-CREATE VIEW Jobs
-FROM
-(
-  SELECT
-    Lender,
-    LoanAmount,
-    JobsReported,
-    MONTH(DateApproved) AS Month,
-    (LoanAmount / JobsReported) AS PerJobAmount
-  FROM PPP_Table
-);
-
--- Query 6
+-- Query 4
 SELECT
   Lender,
   MonthApproved,
@@ -70,7 +41,7 @@ FROM PPP_Table
 GROUP BY Lender, MonthApproved
 ORDER BY AvgPerJobAmount DESC;
 
--- Query 7
+-- Query 5
 SELECT
   Lender,
   MonthApproved,
@@ -79,16 +50,7 @@ FROM PPP_Table
 GROUP BY Lender, MonthApproved
 ORDER BY AVG(JobsReported) DESC;
 
--- write output csv file
-.headers on
-.mode csv
-.output Q7.csv
-select * from tbl1;
-.output stdout
-
-cat db.sql | sqlite3 database.db;
-
-
+-- PPP_Table and zipcode joins
 select
   p.*,
   (

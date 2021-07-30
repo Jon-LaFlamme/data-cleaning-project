@@ -1,8 +1,10 @@
 PPP-Table Schema (ie. PPP-Double-Prime):
 +=====================+===================+
-| LoanAmount (PK)     | Float             |
+| ID (PK)             | Int               |
 +---------------------+-------------------+
-| DateApproved (PK)   | Date              |
+| LoanAmount          | Float             |
++---------------------+-------------------+
+| DateApproved        | Date              |
 +---------------------+-------------------+
 | City                | String            |
 +---------------------+-------------------+
@@ -16,3 +18,28 @@ PPP-Table Schema (ie. PPP-Double-Prime):
 +---------------------+-------------------+
 | Zip                 | String            |
 +=====================+===================+
+
+Zipcode Schema (ie. CSZ):
++=====================+===================+
+| ZipCode (PK)        | String            |
++---------------------+-------------------+
+| City                | String            |
++=====================+===================+
+
+sqlite> .schema ppp_table
+  CREATE TABLE ppp_table (
+    LoanAmount NUMERIC NULL,
+    City VARCHAR(255) NULL,
+    Zip VARCHAR(255) NULL,
+    JobsReported NUMERIC NULL,
+    DateApproved DATE NULL,
+    MonthApproved VARCHAR(255) NULL,
+    Lender VARCHAR(255) NULL,
+    JobTitle VARCHAR(255) NULL,
+    CleanedCity VARCHAR(255) NULL
+  );
+sqlite> .schema zipcode
+  CREATE TABLE zipcode (
+    ZipCode VARCHAR(255) NULL,
+    City VARCHAR(255) NULL
+  );

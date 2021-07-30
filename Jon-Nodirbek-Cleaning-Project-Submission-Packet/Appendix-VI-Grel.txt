@@ -1,7 +1,3 @@
-if(value==0,1,
-if(value==null,1,
-value))
-
 if(value.datePart("months")==1,'JANUARY',
 if(value.datePart("months")==2,'FEBRUARY',
 if(value.datePart("months")==3,'MARCH',
